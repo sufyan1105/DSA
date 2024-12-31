@@ -14,8 +14,8 @@ int main(){
     cout << "Sum : " << (a+b) << endl;
     cout << "Difference : " << (a-b) << endl;
     cout << "Product : " << (a*b) << endl;
-    cout << "Quotient : " << (a/b) << endl;
-    cout << "Remainder : " << (a%b) << endl;
+    cout << "Division : " << (a/b) << endl;
+    cout << "modulo : " << (a%b) << endl;
 
     return 0;
 

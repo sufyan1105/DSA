@@ -1,0 +1,5 @@
+.vscode
+.code.dSYM
+a.out
+code
+.DS_Store

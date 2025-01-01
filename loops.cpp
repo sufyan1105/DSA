@@ -67,7 +67,27 @@ int main(){
     // }
     // cout << isPrime;
 
-    
+    // HomeWork problem 1
+
+    // int sum = 0;
+    // int n = 10;
+    // for ( int i = 0 ; i <= n ; i++){
+    //     if (i % 3 == 0){
+    //         sum += i;
+    // }
+    // }
+    // cout << sum;
+
+    // Homework problem 2
+
+    int n = 5;
+    for (int i = 1; i <= n; i++) {
+        long long factorial = 1;
+        for (int j = 1; j <= i; j++) {
+            factorial *= j;
+        }
+        cout << "Factorial of " << i << " is: " << factorial << endl;
+    }
 
     cout << endl;
     return 0;

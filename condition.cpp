@@ -31,14 +31,11 @@ int main() {
     if (marks >= 90 ) {
         cout << "Grade A" << endl;
     }
-    else if (marks >= 80) {
+    else if (marks >= 80 && marks < 90) {
         cout << "Grade B" << endl;
     }
-    else if (marks >= 70) {
-        cout << "Grade C" << endl;
-    }
     else {
-        cout << "Grade D" << endl;
+        cout << "Grade C" << endl;
     }
 
     return 0;

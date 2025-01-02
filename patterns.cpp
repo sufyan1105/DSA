@@ -30,15 +30,45 @@ int main(){
     //     }
     //     cout << endl;
     // }
+
+    // int num = 1;
+    // int n = 3;
+    // for(int i=0; i<n; i++){
+    //     for (int j=0; j<n; j++){
+    //         cout << num;
+    //         num++;
+    //     }
+    //     cout << endl;
+    // }
+
+    // char ch = 'A';
+    // int n = 3;
+    // for(int i=0; i<n; i++){
+    //     for (int j=0; j<n; j++){
+    //         cout << ch;
+    //         ch = ch + 1;
+    //     }
+    //     cout << endl;
+    // }
+
+    // int n = 4;
+    // for(int i=0; i<n; i++){
+    //     for (int j=0; j<i+1; j++){
+    //         cout << "*";
+    //     }
+    //     cout << endl;
+    // }
+    
+    int n = 4;
     int num = 1;
-    int n = 3;
     for(int i=0; i<n; i++){
-        for (int j=0; j<n; j++){
-            cout << num;
-            num++;
+        for (int j=0; j<i+1; j++){
+            cout << (i+1) ;
         }
         cout << endl;
     }
+
+
 
     return 0;
 }

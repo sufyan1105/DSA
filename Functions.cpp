@@ -16,9 +16,19 @@ using namespace std;
 //     }
 // }
 
+// Calculate the sum of numbers from 1 to N
+int sum(int n){
+    int sum = 0;
+    for (int i = 1 ; i<= n ; i++){
+        sum += i ;
+    }
+    return sum;
+}
+
 int main(){
 
     // cout << sum(12,13) << endl ;
     // cout << min(12,13) << endl ;
+    cout << sum(4) << endl ;
     return 0;
 }

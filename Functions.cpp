@@ -34,7 +34,17 @@ using namespace std;
 //     return fact;
 // }
 
+// Calculate sum of digits of a number
+// int sumOfDigits(int n){
+//     int sum = 0;
+//     while (n > 0) {
+//         sum += n % 10; // adding last number to sum 
+//         n /= 10;   // removing the last digit
+//         }
+//         return sum;
+//     }
 
+//  Calculating binomial coefficient for n & r
 
 int main(){
 
@@ -42,5 +52,6 @@ int main(){
     // cout << min(12,13) << endl ;
     // cout << sum(4) << endl ;
     // cout << factorial(5) << endl ;
+    // cout << sumOfDigits(12345) << endl ;
     return 0;
 }

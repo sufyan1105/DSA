@@ -45,6 +45,21 @@ using namespace std;
 //     }
 
 //  Calculating binomial coefficient for n & r
+// Getting the factorial
+int factorial(int n){
+    int fact = 1;
+    for (int i = 1; i<=n ; i++){
+        fact *= i;
+    }
+    return fact;
+}
+//  Calculating the nCr to find the binomial
+int ncr(int n , int r){
+    int fact_n = factorial(n);
+    int fact_r = factorial(r);
+    int fact_n_r = factorial(n-r);
+    return fact_n / (fact_r * fact_n_r);
+}
 
 int main(){
 
@@ -53,5 +68,9 @@ int main(){
     // cout << sum(4) << endl ;
     // cout << factorial(5) << endl ;
     // cout << sumOfDigits(12345) << endl ;
+    int n = 8 , r = 2;
+    cout << ncr(n,r) << endl;
+    
+
     return 0;
 }

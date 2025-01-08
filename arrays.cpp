@@ -28,13 +28,22 @@ int main(){
     int nums[5] = {11,3,12,25,-3,};
     int size = 5;
     int smallest = INT_MAX;
-    for (int i =0; i < size; i++){
-        smallest = min(nums[i], smallest);
-        // if (nums[i] < smallest){
-        //     smallest = nums[i];
-        // }
+    int largest = INT_MIN;
+
+    // Smallest number of the array
+    // for (int i =0; i < size; i++){
+    //     smallest = min(nums[i], smallest);
+    //     // if (nums[i] < smallest){
+    //     //     smallest = nums[i];
+    //     // }
+    // }
+    // cout << "The smallest number is: " << smallest << endl;
+
+    // Largest number of the array
+    for (int i =0;i < size; i++){
+        largest = max(nums[i],largest);
     }
-    cout << "The smallest number is: " << smallest << endl;
+    cout << "The largest number is: " << largest << endl;
 
     return 0;
 }

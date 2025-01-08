@@ -51,21 +51,41 @@ using namespace std;
 //     return 0;
 // }
 
-void changearr(int arr[],int size){
-    cout << "Inside function" << endl;
-    for (int i =0 ; i <size; i++){
-        arr[i] = arr[i] * 2;
+//  PASS BY REFERENCE
+// void changearr(int arr[],int size){
+//     cout << "Inside function" << endl;
+//     for (int i =0 ; i <size; i++){
+//         arr[i] = arr[i] * 2;
+//     }
+// }
+// int main(){
+
+//     int arr[] = {1,2,3};
+//     int size = 3;
+//     changearr(arr,size);
+//     cout << "Inside main" << endl;
+//     for (int i =0 ; i <3; i++){
+//         cout << arr[i] << endl ;
+//     }
+//     return 0;
+// }
+
+//  LINEAR SEARCH
+
+int linearsearch(int arr[], int size,int target){
+    for (int i =0; i< size; i++){
+        if (arr[i] == target){
+            return i;
+        }
     }
+    return -1;
 }
 int main(){
-
-    int arr[] = {1,2,3};
-    int size = 3;
-    changearr(arr,size);
-    cout << "Inside main" << endl;
-    for (int i =0 ; i <3; i++){
-        cout << arr[i] << endl ;
-    }
+    int arr[] = {1,2,3,4,5,6,7,8,9,10};
+    int size = 10;
+    int target = 4;
+    linearsearch(arr,size,target);
+    cout << linearsearch(arr,size,target) << endl;
 
     return 0;
 }

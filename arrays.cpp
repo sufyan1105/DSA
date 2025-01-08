@@ -23,27 +23,49 @@ using namespace std;
 //     return 0;
 // }
 
+// int main(){
+
+//     int nums[5] = {11,3,12,25,-3,};
+//     int size = 5;
+//     int smallest = INT_MAX;
+//     int largest = INT_MIN;
+//     int index = -1;
+
+//     // Smallest number of the array
+//     // for (int i =0; i < size; i++){
+//     //     smallest = min(nums[i], smallest);
+//     //     // if (nums[i] < smallest){
+//     //     //     smallest = nums[i];
+//     //     // }
+//     // }
+//     // cout << "The smallest number is: " << smallest << endl;
+
+//     // Largest number of the array
+//     for (int i =0;i < size; i++){
+//         largest = max(nums[i],largest);
+//         index = i - 1;
+//     }
+//     cout << "The largest number is: " << largest << endl;
+//     cout << "The index value of the largest number is: " << index << endl;
+
+//     return 0;
+// }
+
+void changearr(int arr[],int size){
+    cout << "Inside function" << endl;
+    for (int i =0 ; i <size; i++){
+        arr[i] = arr[i] * 2;
+    }
+}
 int main(){
 
-    int nums[5] = {11,3,12,25,-3,};
-    int size = 5;
-    int smallest = INT_MAX;
-    int largest = INT_MIN;
-
-    // Smallest number of the array
-    // for (int i =0; i < size; i++){
-    //     smallest = min(nums[i], smallest);
-    //     // if (nums[i] < smallest){
-    //     //     smallest = nums[i];
-    //     // }
-    // }
-    // cout << "The smallest number is: " << smallest << endl;
-
-    // Largest number of the array
-    for (int i =0;i < size; i++){
-        largest = max(nums[i],largest);
+    int arr[] = {1,2,3};
+    int size = 3;
+    changearr(arr,size);
+    cout << "Inside main" << endl;
+    for (int i =0 ; i <3; i++){
+        cout << arr[i] << endl ;
     }
-    cout << "The largest number is: " << largest << endl;
 
     return 0;
 }

@@ -29,9 +29,10 @@ int main(){
     int size = 5;
     int smallest = INT_MAX;
     for (int i =0; i < size; i++){
-        if (nums[i] < smallest){
-            smallest = nums[i];
-        }
+        smallest = min(nums[i], smallest);
+        // if (nums[i] < smallest){
+        //     smallest = nums[i];
+        // }
     }
     cout << "The smallest number is: " << smallest << endl;
 

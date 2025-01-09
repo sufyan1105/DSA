@@ -72,20 +72,63 @@ using namespace std;
 
 //  LINEAR SEARCH
 
-int linearsearch(int arr[], int size,int target){
-    for (int i =0; i< size; i++){
-        if (arr[i] == target){
-            return i;
-        }
+// int linearsearch(int arr[], int size,int target){
+//     for (int i =0; i< size; i++){
+//         if (arr[i] == target){
+//             return i;
+//         }
+//     }
+//     return -1;
+// }
+// int main(){
+//     int arr[] = {1,2,3,4,5,6,7,8,9,10};
+//     int size = 10;
+//     int target = 4;
+//     linearsearch(arr,size,target);
+//     cout << linearsearch(arr,size,target) << endl;
+
+//     return 0;
+// }
+
+//  REVERSE AN ARRAY
+// void reverse(int arr[], int size){
+//     int start = 0;
+//     int end = size - 1;
+//     while (start < end){ // if the size is off use < and if it's even use <=
+//         swap(arr[start],arr[end]);
+//         start++;
+//         end--;
+//     }
+// }
+// int main(){
+//     // int arr[] = {1,2,3,4,5,6,7,8,9,10,11};
+//     int arr[] = {1,2,3,4,5,6,7,8,9,10};
+//     int size = 10;
+//     // int size = 11;
+
+//     reverse(arr,size);
+//     for (int i = 0; i < size; i++){
+//         cout << arr[i] << " ";
+//     }
+//     cout << endl;
+//     return 0;
+// }
+
+// WAF to find sum and product of an array
+void sumproduct(int arr[], int size){
+    int sum = 0;
+    int product = 1;
+    for (int i = 0; i < size; i++){
+        sum += arr[i];
+        product *= arr[i];
     }
-    return -1;
+    cout << "The sum of the array is: " << sum << endl;
+    cout << "The product of the array is: " << product << endl;
 }
 int main(){
-    int arr[] = {1,2,3,4,5,6,7,8,9,10};
-    int size = 10;
-    int target = 4;
-    linearsearch(arr,size,target);
-    cout << linearsearch(arr,size,target) << endl;
-
+    int arr[] = {1,2,3,4,5};
+    int size = 5;
+    sumproduct(arr,size);
     return 0;
 }
+

@@ -115,20 +115,48 @@ using namespace std;
 // }
 
 // WAF to find sum and product of an array
-void sumproduct(int arr[], int size){
-    int sum = 0;
-    int product = 1;
+// void sumproduct(int arr[], int size){
+//     int sum = 0;
+//     int product = 1;
+//     for (int i = 0; i < size; i++){
+//         sum += arr[i];
+//         product *= arr[i];
+//     }
+//     cout << "The sum of the array is: " << sum << endl;
+//     cout << "The product of the array is: " << product << endl;
+// }
+// int main(){
+//     int arr[] = {1,2,3,4,5};
+//     int size = 5;
+//     sumproduct(arr,size);
+//     return 0;
+// }
+
+// WAF to swap the maximum and minimum element of an array
+void swapmaxmin(int arr[], int size){
+    int max = INT_MIN;
+    int min = INT_MAX;
+    int maxindex = -1;
+    int minindex = -1;
     for (int i = 0; i < size; i++){
-        sum += arr[i];
-        product *= arr[i];
+        if (arr[i] > max){
+            max = arr[i];
+            maxindex = i;
+        }
+        if (arr[i] < min){
+            min = arr[i];
+            minindex = i;
+        }
     }
-    cout << "The sum of the array is: " << sum << endl;
-    cout << "The product of the array is: " << product << endl;
+    swap(arr[maxindex],arr[minindex]);
 }
 int main(){
     int arr[] = {1,2,3,4,5};
     int size = 5;
-    sumproduct(arr,size);
+    swapmaxmin(arr,size);
+    for (int i = 0; i < size; i++){
+        cout << arr[i] << " ";
+    }
+    cout << endl;
     return 0;
 }
-

@@ -13,7 +13,7 @@ using namespace std;
 
 
 //     for (int i = 0; i < size; i++) {
-//         cout << "Enter the value of marks: ";
+//         cout << "Enter the value of marks " << i + 1 << ": " << endl;
 //         cin >> marks[i];
 //     }
 //     for (int i = 0; i < size ; i++){
@@ -186,22 +186,22 @@ using namespace std;
 // }
 
 // WAF to find intersection of two arrays
-void intersection(int arr1[], int size1, int arr2[], int size2){
-    for (int i = 0; i < size1; i++){
-        for (int j = 0; j < size2; j++){
-            if (arr1[i] == arr2[j]){
-                cout << arr1[i] << " ";
-                break;
-            }
-        }
-    }
-}
-int main(){
-    int arr1[] = {1,2,3,4,5};
-    int arr2[] = {3,4,5,6,7};
-    int size1 = 5;
-    int size2 = 5;
-    intersection(arr1,size1,arr2,size2);
-    cout << endl;
-    return 0;
-}
+// void intersection(int arr1[], int size1, int arr2[], int size2){
+//     for (int i = 0; i < size1; i++){
+//         for (int j = 0; j < size2; j++){
+//             if (arr1[i] == arr2[j]){
+//                 cout << arr1[i] << " ";
+//                 break;
+//             }
+//         }
+//     }
+// }
+// int main(){
+//     int arr1[] = {1,2,3,4,5};
+//     int arr2[] = {3,4,5,6,7};
+//     int size1 = 5;
+//     int size2 = 5;
+//     intersection(arr1,size1,arr2,size2);
+//     cout << endl;
+//     return 0;
+// }

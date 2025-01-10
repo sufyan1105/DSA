@@ -33,3 +33,27 @@ using namespace std;
 //     cout << maxSum << endl;
 //     return 0;
 // }
+
+vector<int> pairsum(vector<int> nums, int target) {
+    vector<int> ans;
+    int num = nums.size();
+    for (int i = 0; i < num; i++) {
+        for (int j = i + 1; j < num; j++) {
+            if (nums[i] + nums[j] == target) {
+                ans.push_back(i);
+                ans.push_back(j);
+                return ans;
+            }
+        }
+    }
+    return ans;
+    
+}
+
+int main() {
+    vector<int> nums = {2, 7, 11, 15};
+    int target = 13;
+    vector<int> ans = pairsum(nums, target);
+    cout << ans[0] << ", " << ans[1] << endl;
+    return 0;
+}

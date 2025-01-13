@@ -80,8 +80,8 @@ vector<int> pairsum(vector<int> nums, int target) {
     return ans;
 }
 int main(){
-    vector<int> nums = {2, 7, 11, 15};
-    int target = 13;
+    vector<int> nums = {3,2,4};
+    int target = 6;
     vector<int> ans = pairsum(nums, target);
     cout << ans[0] << ", " << ans[1] << endl;
     return 0;

@@ -5,8 +5,11 @@ using namespace std;
 // void changeA(int a){ // pass by value
 //     a = 20;
 // }
-void changeA(int* ptr){
-    *ptr = 20;
+// void changeA(int* ptr){ // pass by reference using pointers
+//     *ptr = 20;
+// }
+void changeA(int &b){ // pass by reference using reference
+    b = 20;
 }
 
 int main(){
@@ -25,7 +28,7 @@ int main(){
 
     // Pass by reference
     int a = 10;
-    changeA(&a);
+    changeA(a);
     cout<< a << endl;
 
     return 0;

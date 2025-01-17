@@ -1,5 +1,5 @@
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
 
 // int main() {
     
@@ -12,13 +12,13 @@ using namespace std;
 //     // cout << marks[4] << endl;
 
 
-//     for (int i = 0; i < size; i++) {
-//         cout << "Enter the value of marks " << i + 1 << ": " << endl;
-//         cin >> marks[i];
-//     }
-//     for (int i = 0; i < size ; i++){
-//         cout << marks[i] << endl;
-//     }
+    // for (int i = 0; i < size; i++) {
+    //     cout << "Enter the value of marks " << i + 1 << ": " << endl;
+    //     cin >> marks[i];
+    // }
+    // for (int i = 0; i < size ; i++){
+    //     cout << marks[i] << endl;
+    // }
 
 //     return 0;
 // }
